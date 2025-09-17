@@ -21,7 +21,7 @@ npm start
 
 ## Kullanılan Teknolojiler
 - React
-- Bootstrap 5
+- Bootstrap 5 
 - React Router
 - Mui
 
