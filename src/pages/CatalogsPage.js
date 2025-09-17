@@ -1,0 +1,105 @@
+import kataloglarPhoto from "assets/images/kataloglar/kataloglar.webp";
+import brosur from "assets/documents/kataloglar/EnwusBrosur.pdf";
+import brosurEng from "assets/documents/kataloglar/EnwusBrosurEnglish.pdf";
+import { Viewer, Worker } from "@react-pdf-viewer/core";
+import "@react-pdf-viewer/core/lib/styles/index.css";
+import React from "react";
+import Dialog from "@mui/material/Dialog";
+import DialogContent from "@mui/material/DialogContent";
+import DialogTitle from "@mui/material/DialogTitle";
+import ImgCardComponent from "components/ImgCardComponent/ImgCardComponent";
+
+const Catalogs = () => {
+  const [open, setOpen] = React.useState(false);
+  const [scroll, setScroll] = React.useState("paper");
+  const [selectedPdf, setSelectedPdf] = React.useState(null);
+
+  const handleClickOpen =
+    (pdfFile, scrollType = "paper") =>
+    () => {
+      setSelectedPdf(pdfFile);
+      setScroll(scrollType);
+      setOpen(true);
+    };
+
+  const handleClose = () => {
+    setOpen(false);
+    setSelectedPdf(null);
+  };
+
+  const kataloglar = [
+    {
+      title: "Broşür - TR",
+      pdf: brosur,
+      aciklama:
+        " ENWUS MAKİNA MÜHENDİSLİK olarak; Yıllar İçerisinde Kazanılan Bilgi,Birikim ve Tecrübe ile Talaşlı, Talaşsız İmalat, Kaynaklı, Kaynaksız İmalat...",
+    },
+    {
+      title: "Brochure - ENG",
+      pdf: brosurEng,
+      aciklama:
+        " As ENWUS ENGINEERING; Machining, Chipless Manufacturing, Welded and Weldless Manufacturing, Sheet Metal, Design, Production of Subjects...",
+    },
+  ];
+
+  return (
+    <>
+      <section className="py-5 catalogs-section">
+        <div className="container">
+          <h2 className="mb-3 text-md-start text-center text-primary-emphasis ">
+            Kataloglar
+          </h2>
+          <div className="row mt-4 gy-2 gx-2">
+            {kataloglar.map((item, index) => (
+              <div className="col-lg-4 " key={index}>
+                <ImgCardComponent
+                  title={item.title}
+                  description={item.aciklama}
+                  image={kataloglarPhoto}
+                  label="Görüntüle"
+                  link="/"
+                  onClick={handleClickOpen(item.pdf, "paper")}
+                />
+              </div>
+            ))}
+          </div>
+        </div>
+      </section>
+
+      {/* Dialog */}
+      <Dialog
+        open={open}
+        onClose={handleClose}
+        scroll={"body"}
+        aria-labelledby="scroll-dialog-title"
+        fullWidth
+        maxWidth="md"
+      >
+        <DialogTitle id="scroll-dialog-title">Katalog</DialogTitle>
+        <button
+          type="button"
+          className="btn-close position-absolute"
+          aria-label="Close"
+          onClick={handleClose}
+          style={{
+            right: "16px",
+            top: "16px",
+            transform: "scale(0.8)",
+            color: "#6c757d",
+          }}
+        ></button>
+        <DialogContent dividers={scroll === "paper"}>
+          {selectedPdf && (
+            <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js">
+              <div style={{ height: "80vh", width: "100%" }}>
+                <Viewer fileUrl={selectedPdf} />
+              </div>
+            </Worker>
+          )}
+        </DialogContent>
+      </Dialog>
+    </>
+  );
+};
+
+export default Catalogs;
