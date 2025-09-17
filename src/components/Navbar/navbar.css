@@ -11,7 +11,7 @@
     box-shadow: 0 2px 20px rgba(0, 0, 0, 0.1);
     padding: 0.5rem 0;
     transition: all 0.3s ease;
-    font-size: 0.875rem !important;
+    font-size: 1.10rem !important;
 }
 
 .navbar.fixed-top {
@@ -22,7 +22,7 @@
 }
 
 .navbar-brand {
-    font-size: 0.875rem !important;
+    font-size: 1.10rem !important;
     font-weight: 700;
     color: var(--primary-color);
     display: flex;

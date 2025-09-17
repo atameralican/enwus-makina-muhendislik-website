@@ -4,7 +4,7 @@ import { useEffect } from "react";
 import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 import CoreLayout from "./components/CoreLayout";
 
-import "@fortawesome/fontawesome-free/css/all.min.css";
+// import "@fortawesome/fontawesome-free/css/all.min.css";
 // React routes
 import routes from "routes";
 import "./index.css"

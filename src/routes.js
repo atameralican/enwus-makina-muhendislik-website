@@ -26,14 +26,12 @@ import sacKesim from "assets/images/banners/sackesim.webp";
 const routes = [
   {
     name: "Hakkımızda",
-    icon: "bi bi-info-circle", // i
     route: "/hakkimizda",
     component: <AboutUs />,
     bannerImg: hizmetlerBanner,
   },
   {
     name: "Faaliyet Alanlarımız",
-    icon: "bi bi-grid-3x3-gap", // dropdown icon
     collapse: [
       {
         name: "Ar-ge ve Mühendislik Hizmetleri",
@@ -90,14 +88,12 @@ const routes = [
   },
   {
     name: "Kataloglar",
-    icon: "bi bi-journal-bookmark",
     route: "/kataloglar",
     component: <Catalogs />,
     bannerImg: catalogBanner,
   },
   {
     name: "İletişim",
-    icon: "bi bi-envelope",
     route: "/iletisim",
     component: <Contact />,
     bannerImg: contactBanner,
