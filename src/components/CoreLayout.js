@@ -1,8 +1,8 @@
 import routes from "routes";
 import Footer from "components/Footer";
-import defaultBanner from "assets/images/banners/home_banner2.webp";
+import defaultBanner from "assets/images/banners/banner.webp";
 import Navbar from "./Navbar/Navbar";
-const CoreLayout = ({ bannerImg, children, bannerTitle, bannerText }) => {
+const CoreLayout = ({ bannerImg, children, bannerTitle, bannerText,bannerImg1200 }) => {
   return (
     <>
       {/* NAVBAR */}
@@ -10,8 +10,12 @@ const CoreLayout = ({ bannerImg, children, bannerTitle, bannerText }) => {
       {/* BANNER */}
       <section className="banner position-relative text-center d-flex align-items-center justify-content-center">
         <img
-          src={bannerImg || defaultBanner}
-          alt="Deplasman PlayStation Banner"
+          src={bannerImg1200 || bannerImg || defaultBanner}
+          srcSet={`
+            ${bannerImg1200 || bannerImg || defaultBanner} 1200w,
+            ${bannerImg || defaultBanner} 1920w
+          `}
+          alt="Enwus makina mühendislik"
           className="img-fluid banner-img"
           loading="lazy"
         />
