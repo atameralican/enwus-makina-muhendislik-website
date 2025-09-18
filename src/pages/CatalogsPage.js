@@ -1,10 +1,10 @@
-import React, { useState, useEffect } from "react";
+import React, { useState,  } from "react";
 import kataloglarPhoto from "assets/images/kataloglar/kataloglar.webp";
 import brosur from "assets/documents/kataloglar/EnwusBrosur.pdf";
 import brosurEng from "assets/documents/kataloglar/EnwusBrosurEnglish.pdf";
 import { Viewer, Worker } from "@react-pdf-viewer/core";
 import "@react-pdf-viewer/core/lib/styles/index.css";
-import { Modal, Button } from "react-bootstrap";
+import { Modal,  } from "react-bootstrap";
 import ImgCardComponent from "components/ImgCardComponent/ImgCardComponent";
 
 const Catalogs = () => {
