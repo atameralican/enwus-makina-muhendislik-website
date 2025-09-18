@@ -55,7 +55,7 @@ const Contact = () => {
                     className="text-decoration-none text-reset d-inline-flex align-items-center"
                   >
                     {" "}
-                    <i class="fab fa-linkedin"></i>
+                    <i class="bi bi-linkedin"></i>
                     <span class="ms-2">/enwus-makina-muhendislik</span>
                   </a>
                 </div>

@@ -25,13 +25,13 @@ const CoreLayout = ({ bannerImg, children, bannerTitle, bannerText }) => {
               <>
                 {" "}
                 <a href="#" className="text-white me-3 fs-5">
-                  <i className="fab fa-facebook" />
+                  <i className="bi bi-facebook" />
                 </a>
                 <a href="#" className="text-white me-3 fs-5">
-                  <i className="fab fa-instagram" />
+                  <i className="bi bi-instagram" />
                 </a>
                 <a href="#" className="text-white me-3 fs-5">
-                  <i className="fab fa-linkedin" />
+                  <i className="bi bi-linkedin" />
                 </a>
               </>
             )}
