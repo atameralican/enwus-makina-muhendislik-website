@@ -64,7 +64,7 @@ import { Link  } from "react-router-dom";
               rel="noopener noreferrer"
               className="text-secondary opacity-50 "
             >
-              <i className="fab fa-linkedin"></i> enwus-maki̇na-mühendi̇sli̇k
+              <i className="bi bi-linkedin"></i> enwus-maki̇na-mühendi̇sli̇k
             </a>
           </div>
         </div>

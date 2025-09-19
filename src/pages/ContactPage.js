@@ -3,7 +3,8 @@ import profilePicture from "assets/images/logo-kucuk-beyaz.webp";
 import L from "leaflet";
 import markerIconPng from "leaflet/dist/images/marker-icon.png";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-
+import "leaflet/dist/leaflet.css";
+import "../assets/styles/contact.css";
 const Contact = () => {
   return (
     <>
@@ -55,7 +56,7 @@ const Contact = () => {
                     className="text-decoration-none text-reset d-inline-flex align-items-center"
                   >
                     {" "}
-                    <i class="fab fa-linkedin"></i>
+                    <i class="bi bi-linkedin"></i>
                     <span class="ms-2">/enwus-makina-muhendislik</span>
                   </a>
                 </div>

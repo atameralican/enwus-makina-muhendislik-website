@@ -1,6 +1,7 @@
-import bgImage from "assets/images/banners/home_banner2.webp";
+import banner from "assets/images/banners/banner.webp"; 
+import banner_1200 from "assets/images/banners/banner-1200.webp"; //mobil and tablet için
 import CoreLayout from "../components/CoreLayout";
-import ImgCardComponent from "../components/ImgCardComponent/ImgCardComponent";
+import ImgCardComponent from "../components/ImgCardComponent";
 //bu sayfada resimler eklenecek imgcarda
 import mekanik from "../assets/images/faaliyetler/mekanik/1.webp";
 import sacKesim from "../assets/images/faaliyetler/sacKesim/4.webp";
@@ -12,9 +13,10 @@ const HomePage = () => {
   return (
     <>
       <CoreLayout
-        bannerImg={bgImage}
+        bannerImg={banner}
         bannerTitle="Endüstriyel Üretimin Güvenilir Ortağı"
         bannerText="Enwus Makina Mühendislik"
+        bannerImg1200={banner_1200}
       >
         <div className="container mt-3 mb-3">
           <div className="row gy-3 gx-3 ">
@@ -22,7 +24,7 @@ const HomePage = () => {
               <ImgCardComponent
                 title="AR-GE ve Mühendislik"
                 description="AR-GE ve Mühendislik birimimiz, yenilikçi çözümler geliştirmek ve ürünlerimize değer katmak amacıyla sürekli araştırma ve tasarım faaliyetleri yürütmektedir."
-                image={bgImage}
+                image={banner_1200}
                 link="/arge"
               />
             </div>

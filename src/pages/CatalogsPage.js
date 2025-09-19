@@ -1,31 +1,22 @@
+import React, { useState,  } from "react";
 import kataloglarPhoto from "assets/images/kataloglar/kataloglar.webp";
 import brosur from "assets/documents/kataloglar/EnwusBrosur.pdf";
 import brosurEng from "assets/documents/kataloglar/EnwusBrosurEnglish.pdf";
 import { Viewer, Worker } from "@react-pdf-viewer/core";
 import "@react-pdf-viewer/core/lib/styles/index.css";
-import React from "react";
-import Dialog from "@mui/material/Dialog";
-import DialogContent from "@mui/material/DialogContent";
-import DialogTitle from "@mui/material/DialogTitle";
-import ImgCardComponent from "components/ImgCardComponent/ImgCardComponent";
+import { Modal,  } from "react-bootstrap";
+import ImgCardComponent from "components/ImgCardComponent";
 
 const Catalogs = () => {
-  const [open, setOpen] = React.useState(false);
-  const [scroll, setScroll] = React.useState("paper");
   const [selectedPdf, setSelectedPdf] = React.useState(null);
+  const [show, setShow] = useState(false);
 
   const handleClickOpen =
     (pdfFile, scrollType = "paper") =>
     () => {
       setSelectedPdf(pdfFile);
-      setScroll(scrollType);
-      setOpen(true);
+      setShow(true);
     };
-
-  const handleClose = () => {
-    setOpen(false);
-    setSelectedPdf(null);
-  };
 
   const kataloglar = [
     {
@@ -66,29 +57,18 @@ const Catalogs = () => {
         </div>
       </section>
 
-      {/* Dialog */}
-      <Dialog
-        open={open}
-        onClose={handleClose}
-        scroll={"body"}
-        aria-labelledby="scroll-dialog-title"
-        fullWidth
-        maxWidth="md"
+      <Modal
+        show={show}
+        size="xl"
+        onHide={() => {
+          setShow(false);
+          setSelectedPdf(null);
+        }}
       >
-        <DialogTitle id="scroll-dialog-title">Katalog</DialogTitle>
-        <button
-          type="button"
-          className="btn-close position-absolute"
-          aria-label="Close"
-          onClick={handleClose}
-          style={{
-            right: "16px",
-            top: "16px",
-            transform: "scale(0.8)",
-            color: "#6c757d",
-          }}
-        ></button>
-        <DialogContent dividers={scroll === "paper"}>
+        <Modal.Header closeButton>
+          <Modal.Title>Katalog</Modal.Title>
+        </Modal.Header>
+        <Modal.Body>
           {selectedPdf && (
             <Worker workerUrl="https://unpkg.com/pdfjs-dist@3.11.174/build/pdf.worker.min.js">
               <div style={{ height: "80vh", width: "100%" }}>
@@ -96,8 +76,8 @@ const Catalogs = () => {
               </div>
             </Worker>
           )}
-        </DialogContent>
-      </Dialog>
+        </Modal.Body>
+      </Modal>
     </>
   );
 };

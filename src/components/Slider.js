@@ -1,5 +1,6 @@
 import React from "react";
 import Slider from "react-slick";
+import "../assets/styles/slider.css"
 const ImageSlider = ({ images = [] }) => {
   const settings = {
     className: "center",

@@ -8,6 +8,7 @@ import montaj from "../assets/images/about-us/montaj.webp";
 import talasli from "../assets/images/about-us/talasli.webp";
 import sackesim from "../assets/images/about-us/sackesim.webp";
 import hidrolikPnomatik from "../assets/images/about-us/hidrolik.webp";
+import "../assets/styles/about-us.css";
     const AboutUs=()=> {
   return (
     <>

@@ -23,7 +23,6 @@ npm start
 - React
 - Bootstrap 5 
 - React Router
-- Mui
 
 ## Lisans
 Bu proje Enwus Makina Mühendislik için özel olarak geliştirilmiştir.
