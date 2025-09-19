@@ -1,7 +1,7 @@
 import banner from "assets/images/banners/banner.webp"; 
 import banner_1200 from "assets/images/banners/banner-1200.webp"; //mobil and tablet için
 import CoreLayout from "../components/CoreLayout";
-import ImgCardComponent from "../components/ImgCardComponent/ImgCardComponent";
+import ImgCardComponent from "../components/ImgCardComponent";
 //bu sayfada resimler eklenecek imgcarda
 import mekanik from "../assets/images/faaliyetler/mekanik/1.webp";
 import sacKesim from "../assets/images/faaliyetler/sacKesim/4.webp";

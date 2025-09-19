@@ -1,6 +1,6 @@
 import React, { useState, useEffect, useRef } from "react";
 import { NavLink } from "react-router-dom";
-import "./navbar.css";
+import "../assets/styles/navbar.css";
 
 const Navbar = ({ routes }) => {
   const [isNavbarCollapsed, setIsNavbarCollapsed] = useState(false);

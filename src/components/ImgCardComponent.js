@@ -1,5 +1,5 @@
 import React from "react";
-import "./ImgCardComponent.css";
+import "../assets/styles/img-card-components.css";
 
 const ImgCardComponent = ({
   title,

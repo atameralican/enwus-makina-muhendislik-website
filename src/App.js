@@ -1,21 +1,12 @@
 import { useEffect } from "react";
-
-// react-router components
 import { Routes, Route, Navigate, useLocation } from "react-router-dom";
 import CoreLayout from "./components/CoreLayout";
-
-// import "@fortawesome/fontawesome-free/css/all.min.css";
-// React routes
 import routes from "routes";
-import "./index.css"
-import "leaflet/dist/leaflet.css";
-import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
-import 'bootstrap/dist/css/bootstrap.min.css';
+import "./index.css";
+import "bootstrap/dist/css/bootstrap.min.css";
 import "bootstrap-icons/font/bootstrap-icons.css";
-import 'bootstrap/dist/js/bootstrap.bundle.min.js';
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
 import HomePage from "./pages/HomePage";
-//dahasonra ana sayfa eklenince kelenecek
 export default function App() {
   const { pathname } = useLocation();
 
@@ -37,7 +28,11 @@ export default function App() {
             exact
             path={route.route}
             key={route.key}
-            element={<CoreLayout bannerImg={route?.bannerImg}>{route.component}</CoreLayout>}
+            element={
+              <CoreLayout bannerImg={route?.bannerImg}>
+                {route.component}
+              </CoreLayout>
+            }
           />
         );
       }
@@ -46,14 +41,11 @@ export default function App() {
     });
 
   return (
- 
-     
-      <Routes>
-        {getRoutes(routes)}
-        <Route path="/" element={<HomePage />} />
-        <Route path="*" element={<Navigate to="/" />} />
-        {/* Bunun için bi sayfa bulunamadı sayfası tasarlanabilir.  */}
-      </Routes>
-
+    <Routes>
+      {getRoutes(routes)}
+      <Route path="/" element={<HomePage />} />
+      <Route path="*" element={<Navigate to="/" />} />
+      {/* Bunun için bi sayfa bulunamadı sayfası tasarlanacak.  */}
+    </Routes>
   );
 }

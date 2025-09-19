@@ -1,7 +1,8 @@
 import routes from "routes";
 import Footer from "components/Footer";
 import defaultBanner from "assets/images/banners/banner.webp";
-import Navbar from "./Navbar/Navbar";
+import Navbar from "./Navbar";
+import "../assets/styles/core-layout.css";
 const CoreLayout = ({ bannerImg, children, bannerTitle, bannerText,bannerImg1200 }) => {
   return (
     <>
