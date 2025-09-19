@@ -1,14 +1,15 @@
-import banner from "assets/images/banners/banner.webp"; 
-import banner_1200 from "assets/images/banners/banner-1200.webp"; //mobil and tablet için
 import CoreLayout from "../components/CoreLayout";
 import ImgCardComponent from "../components/ImgCardComponent";
-//bu sayfada resimler eklenecek imgcarda
-import mekanik from "../assets/images/faaliyetler/mekanik/1.webp";
-import sacKesim from "../assets/images/faaliyetler/sacKesim/4.webp";
-import talasli from "../assets/images/faaliyetler/talasli/talasli7.webp";
-import kaynakli from "../assets/images/faaliyetler/kaynak/kaynak-1.webp";
-import hidrolik from "../assets/images/faaliyetler/hidrolik/3.webp";
-import hirdavat from "../assets/images/faaliyetler/hirdavat/hirdavat-3.webp";
+//photos
+import arge from "../assets/images/home-page/arge.webp";
+import mekanik from "../assets/images/home-page/mekanik-kucuk.webp";
+import sacKesim from "../assets/images/home-page/sackesim.webp";
+import talasli from "../assets/images/home-page/talasli.webp";
+import kaynakli from "../assets/images/home-page/kaynakli.webp";
+import hidrolik from "../assets/images/home-page/hidrolik.webp";
+import hirdavat from "../assets/images/home-page/hirdavat.webp";
+import banner from "../assets/images/home-page/banner.webp";
+import banner_kucuk from "../assets/images/home-page/banner-kucuk.webp";
 const HomePage = () => {
   return (
     <>
@@ -16,7 +17,7 @@ const HomePage = () => {
         bannerImg={banner}
         bannerTitle="Endüstriyel Üretimin Güvenilir Ortağı"
         bannerText="Enwus Makina Mühendislik"
-        bannerImg1200={banner_1200}
+        bannerImg1200={banner_kucuk}
       >
         <div className="container mt-3 mb-3">
           <div className="row gy-3 gx-3 ">
@@ -24,7 +25,7 @@ const HomePage = () => {
               <ImgCardComponent
                 title="AR-GE ve Mühendislik"
                 description="AR-GE ve Mühendislik birimimiz, yenilikçi çözümler geliştirmek ve ürünlerimize değer katmak amacıyla sürekli araştırma ve tasarım faaliyetleri yürütmektedir."
-                image={banner_1200}
+                image={arge}
                 link="/arge"
               />
             </div>
