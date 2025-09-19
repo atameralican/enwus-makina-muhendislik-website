@@ -17,7 +17,7 @@ const HomePage = () => {
         bannerImg={banner}
         bannerTitle="Endüstriyel Üretimin Güvenilir Ortağı"
         bannerText="Enwus Makina Mühendislik"
-        bannerImg1200={banner_kucuk}
+        bannerKucuk={banner_kucuk}
       >
         <div className="container mt-3 mb-3">
           <div className="row gy-3 gx-3 ">

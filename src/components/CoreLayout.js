@@ -8,7 +8,7 @@ const CoreLayout = ({
   children,
   bannerTitle,
   bannerText,
-  bannerImg1200,
+  bannerKucuk,
 }) => {
   return (
     <>
@@ -17,9 +17,9 @@ const CoreLayout = ({
       {/* BANNER */}
       <section className="banner position-relative text-center d-flex align-items-center justify-content-center">
         <img
-          src={bannerImg1200 || bannerImg || defaultBanner}
+          src={bannerKucuk || bannerImg || defaultBanner}
           srcSet={`
-    ${bannerImg1200 || bannerImg || defaultBanner} 1200w,
+    ${bannerKucuk || bannerImg || defaultBanner} 1200w,
     ${bannerImg || defaultBanner} 1920w
   `}
           alt="Enwus makina mühendislik"

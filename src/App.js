@@ -20,12 +20,12 @@ const Loading = () => (
     }}
   >
     <div className="d-flex gap-2">
-      <div class="spinner-grow text-primary" role="status" />
-      <div class="spinner-grow text-secondary" role="status" />
-      <div class="spinner-grow text-success" role="status" />
-      <div class="spinner-grow text-danger" role="status" />
-      <div class="spinner-grow text-warning" role="status" />
-      <div class="spinner-grow text-info" role="status" />
+      <div className="spinner-grow text-primary" role="status" />
+      <div className="spinner-grow text-secondary" role="status" />
+      <div className="spinner-grow text-success" role="status" />
+      <div className="spinner-grow text-danger" role="status" />
+      <div className="spinner-grow text-warning" role="status" />
+      <div className="spinner-grow text-info" role="status" />
     </div>
   </div>
 );
@@ -53,7 +53,7 @@ export default function App() {
             key={route.key}
             element={
               <Suspense fallback={<Loading />}>
-                <CoreLayout bannerImg={route?.bannerImg}>
+                <CoreLayout bannerImg={route?.bannerImg} bannerKucuk={route?.bannerKucuk} >
                   <ComponentToRender />
                 </CoreLayout>
               </Suspense>

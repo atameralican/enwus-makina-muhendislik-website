@@ -1,11 +1,12 @@
 import React, { useState,  } from "react";
-import kataloglarPhoto from "assets/images/kataloglar/kataloglar.webp";
+import kataloglarPhoto from "assets/images/catalogs-page/kataloglar.avif";
+import kataloglarKucuk from "assets/images/catalogs-page/kataloglarkucuk.avif";
 import brosur from "assets/documents/kataloglar/EnwusBrosur.pdf";
 import brosurEng from "assets/documents/kataloglar/EnwusBrosurEnglish.pdf";
 import { Viewer, Worker } from "@react-pdf-viewer/core";
 import "@react-pdf-viewer/core/lib/styles/index.css";
 import { Modal,  } from "react-bootstrap";
-import ImgCardComponent from "components/ImgCardComponent";
+import ImgCardComponent from "../components/ImgCardComponent";
 
 const Catalogs = () => {
   const [selectedPdf, setSelectedPdf] = React.useState(null);
@@ -46,11 +47,14 @@ const Catalogs = () => {
                 <ImgCardComponent
                   title={item.title}
                   description={item.aciklama}
+                  imageKucuk={kataloglarKucuk}
                   image={kataloglarPhoto}
                   label="Görüntüle"
                   link="/"
                   onClick={handleClickOpen(item.pdf, "paper")}
                 />
+
+                  
               </div>
             ))}
           </div>
