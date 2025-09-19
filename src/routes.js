@@ -1,18 +1,5 @@
-// Pages
-import AboutUs from "./pages/AboutUsPage";
-import Contact from "./pages/ContactPage";
-import Catalogs from "./pages/CatalogsPage";
-import Arge from "./pages/Arge";
-import HidrolikPnomatik from "./pages/HidrolikPnomatik";
-import Hirdavat from "./pages/Hirdavat";
-import Kaynakli from "./pages/Kaynakli";
-import MekanikTesisat from "./pages/MekanikTesisat";
-import SacKesimBukum from "./pages/SacKesimBukum";
-import Talasli from "./pages/Talasli";
-import TestEkipmanlari from "pages/TestEkipmanlari";
-import Savunma from "pages/Savunma";
+import { lazy } from "react";
 
-// Images
 import hizmetlerBanner from "assets/images/about-us/hizmetlerBan.webp";
 import catalogBanner from "assets/images/kataloglar/machine_old.webp";
 import contactBanner from "assets/images/banners/iletisimBanner.webp";
@@ -23,79 +10,104 @@ import kaynakli from "assets/images/banners/kaynak.webp";
 import mekanikTesisat from "assets/images/banners/mekanik_tesisat.webp";
 import sacKesim from "assets/images/banners/sackesim.webp";
 
+const AboutUs = lazy(() => import("./pages/AboutUsPage"));
+const Contact = lazy(() => import("./pages/ContactPage"));
+const Catalogs = lazy(() => import("./pages/CatalogsPage"));
+const Arge = lazy(() => import("./pages/Arge"));
+const HidrolikPnomatik = lazy(() => import("./pages/HidrolikPnomatik"));
+const Hirdavat = lazy(() => import("./pages/Hirdavat"));
+const Kaynakli = lazy(() => import("./pages/Kaynakli"));
+const MekanikTesisat = lazy(() => import("./pages/MekanikTesisat"));
+const SacKesimBukum = lazy(() => import("./pages/SacKesimBukum"));
+const Talasli = lazy(() => import("./pages/Talasli"));
+const TestEkipmanlari = lazy(() => import("./pages/TestEkipmanlari"));
+const Savunma = lazy(() => import("./pages/Savunma"));
 const routes = [
   {
     name: "Hakkımızda",
     route: "/hakkimizda",
-    component: <AboutUs />,
+    component: AboutUs,
+    key: "about-us",
     bannerImg: hizmetlerBanner,
   },
   {
     name: "Faaliyet Alanlarımız",
+    key: "faaliyet-alanlari",
     collapse: [
       {
         name: "Ar-ge ve Mühendislik Hizmetleri",
         route: "/arge",
-        component: <Arge />,
+        component: Arge,
+        key: "arge",
         bannerImg: arge,
       },
       {
         name: "Talaşlı İmalat",
         route: "/talasli-imalat",
-        component: <Talasli />,
+        component: Talasli,
+        key: "talasli-imalat",
         bannerImg: talasli,
       },
       {
         name: "Savunma Sanayi",
         route: "/savunma-sanayi",
-        component: <Savunma />,
+        component: Savunma,
+        key: "savunma-sanayi",
       },
       {
         name: "Kaynaklı İmalat",
         route: "/kaynakli-imalat",
-        component: <Kaynakli />,
+        component: Kaynakli,
+        key: "kaynakli-imalat",
         bannerImg: kaynakli,
       },
       {
         name: "Sac Kesim Büküm Silindir",
         route: "/sac-kesim-bukum",
-        component: <SacKesimBukum />,
+        component: SacKesimBukum,
+        key: "sac-kesim-bukum",
         bannerImg: sacKesim,
       },
       {
         name: "Hidrolik Pnömatik",
         route: "/hidrolik-pnomatik",
-        component: <HidrolikPnomatik />,
+        component: HidrolikPnomatik,
+        key: "hidrolik-pnomatik",
         bannerImg: hidrolik,
       },
       {
         name: "Mekanik Tesisat Ürünleri",
         route: "/mekanik-tesisat",
-        component: <MekanikTesisat />,
+        component: MekanikTesisat,
+        key: "mekanik-tesisat",
         bannerImg: mekanikTesisat,
       },
       {
         name: "Test Ekipmanları",
         route: "/test-ekipmanlari",
-        component: <TestEkipmanlari />,
+        component: TestEkipmanlari,
+        key: "test-ekipmanlari",
       },
       {
         name: "Toptan Hırdavat",
         route: "/hirdavat",
-        component: <Hirdavat />,
+        component: Hirdavat,
+        key: "hirdavat",
       },
     ],
   },
   {
     name: "Kataloglar",
     route: "/kataloglar",
-    component: <Catalogs />,
+    component: Catalogs,
+    key: "kataloglar",
     bannerImg: catalogBanner,
   },
   {
     name: "İletişim",
     route: "/iletisim",
-    component: <Contact />,
+    component: Contact,
+    key: "iletisim",
     bannerImg: contactBanner,
   },
 ];
