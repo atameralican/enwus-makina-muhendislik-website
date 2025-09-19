@@ -3,7 +3,13 @@ import Footer from "components/Footer";
 import defaultBanner from "assets/images/banners/banner.webp";
 import Navbar from "./Navbar";
 import "../assets/styles/core-layout.css";
-const CoreLayout = ({ bannerImg, children, bannerTitle, bannerText,bannerImg1200 }) => {
+const CoreLayout = ({
+  bannerImg,
+  children,
+  bannerTitle,
+  bannerText,
+  bannerImg1200,
+}) => {
   return (
     <>
       {/* NAVBAR */}
@@ -13,12 +19,13 @@ const CoreLayout = ({ bannerImg, children, bannerTitle, bannerText,bannerImg1200
         <img
           src={bannerImg1200 || bannerImg || defaultBanner}
           srcSet={`
-            ${bannerImg1200 || bannerImg || defaultBanner} 1200w,
-            ${bannerImg || defaultBanner} 1920w
-          `}
+    ${bannerImg1200 || bannerImg || defaultBanner} 1200w,
+    ${bannerImg || defaultBanner} 1920w
+  `}
           alt="Enwus makina mühendislik"
           className="img-fluid banner-img"
-          loading="lazy"
+          fetchpriority="high"
+          decoding="async"
         />
         <div className="banner-overlay "></div>
         <div className="banner-content text-white">
