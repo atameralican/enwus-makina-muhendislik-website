@@ -10,6 +10,7 @@
   overflow: hidden;
   border-top-left-radius: 16px 16px;
   border-bottom-left-radius: 16px 16px;
+  height: 400px; /* Sabit yükseklik eklendi */
 }
 
 .contact-img {
@@ -20,7 +21,7 @@
 }
 
 .contact-map {
-  width: 100%;
+  /* width: 100% kaldırıldı - Bootstrap col sınıfı genişliği otomatik ayarlayacak */
   height: 400px;
 }
 
@@ -45,13 +46,18 @@
   font-size: small;
 }
 
+/* Flexbox düzenlemesi için ek class */
+.contact-section .row {
+  align-items: stretch; /* İki kolonu aynı yükseklikte tutar */
+}
+
 /* KÜÇÜK EKRAN CSS */
 @media (max-width: 991.98px) {
   .map-style {
     border-radius: 16px;
   }
 
-  .info-box {
+  .info-box-img {
     border-radius: 16px;
   }
 }

@@ -1,14 +1,18 @@
 import { lazy } from "react";
 
 import hizmetlerBanner from "assets/images/about-us/hizmetlerBan.webp";
-import catalogBanner from "assets/images/kataloglar/machine_old.webp";
-import contactBanner from "assets/images/banners/iletisimBanner.webp";
+// import catalogBanner from "assets/images/kataloglar/machine_old.webp";
 import arge from "assets/images/banners/arge.webp";
 import talasli from "assets/images/banners/talasli8.webp";
 import hidrolik from "assets/images/banners/hidrolik.webp";
 import kaynakli from "assets/images/banners/kaynak.webp";
 import mekanikTesisat from "assets/images/banners/mekanik_tesisat.webp";
 import sacKesim from "assets/images/banners/sackesim.webp";
+
+import catalogBanner from "assets/images/catalogs-page/catalog-banner.webp";
+import catalogKucuk  from "assets/images/catalogs-page/catalog-banner-kucuk.webp";
+import contactBanner  from "assets/images/contact-page/iletisimBanner.webp";
+import contactKucuk  from "assets/images/contact-page/iletisimBannerKucuk.webp";
 
 const AboutUs = lazy(() => import("./pages/AboutUsPage"));
 const Contact = lazy(() => import("./pages/ContactPage"));
@@ -102,6 +106,7 @@ const routes = [
     component: Catalogs,
     key: "kataloglar",
     bannerImg: catalogBanner,
+    bannerKucuk: catalogKucuk,
   },
   {
     name: "İletişim",
@@ -109,6 +114,7 @@ const routes = [
     component: Contact,
     key: "iletisim",
     bannerImg: contactBanner,
+    bannerKucuk: contactKucuk,
   },
 ];
 

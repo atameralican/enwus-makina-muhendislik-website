@@ -5,6 +5,7 @@ const ImgCardComponent = ({
   title,
   description,
   image,
+  imageKucuk,
   link,
   onClick,
   label,
@@ -16,7 +17,16 @@ const ImgCardComponent = ({
       style={onClick ? { cursor: "pointer" } : undefined}
     >
       {/* Görsel */}
-      <img src={image} alt={title} className="img-card-img" loading="lazy" />
+      <img
+        src={imageKucuk}
+        srcSet={`
+    ${imageKucuk ?? image} 1200w,
+    ${image} 1920w
+  `}
+        alt={title}
+        className="img-card-img"
+        loading="lazy"
+      />
 
       {/* Overlay içerik */}
       <div className="img-card-overlay p-5 d-flex flex-column justify-content-between">

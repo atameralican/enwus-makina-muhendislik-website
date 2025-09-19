@@ -48,7 +48,7 @@ import { Link  } from "react-router-dom";
               </nav>
             </div>
 
-            <p class="fs-6 fw-light">
+            <p className="fs-6 fw-light">
               Copyright © <script>document.write</script>2025 Alican ATAMER
             </p>
           </div>
