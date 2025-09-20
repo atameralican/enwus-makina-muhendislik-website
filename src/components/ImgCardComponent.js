@@ -26,6 +26,9 @@ const ImgCardComponent = ({
         alt={title}
         className="img-card-img"
         loading="lazy"
+        sizes="(max-width: 768px) 100vw, 42vw"
+        decoding="async"
+        fetchpriority="low"
       />
 
       {/* Overlay içerik */}

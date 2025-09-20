@@ -18,6 +18,7 @@ const HomePage = () => {
         bannerTitle="Endüstriyel Üretimin Güvenilir Ortağı"
         bannerText="Enwus Makina Mühendislik"
         bannerKucuk={banner_kucuk}
+        bannerAlt="Enwus Makina Mühendislik - Anasayfa"
       >
         <div className="container mt-3 mb-3">
           <div className="row gy-3 gx-3 ">

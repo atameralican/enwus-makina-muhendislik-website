@@ -19,7 +19,7 @@ const FaaliyetlerPageComponent = ({ title, images, children }) => {
                   </p>
                 </div>
                 <div className="col-12 col-md-5">
-                  <ImageSlider images={images} />
+                  <ImageSlider images={images} aria-label={title}/>
                 </div>
               </div>
             </div>
