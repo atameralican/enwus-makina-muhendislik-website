@@ -9,6 +9,7 @@ const CoreLayout = ({
   bannerTitle,
   bannerText,
   bannerKucuk,
+  bannerAlt,
 }) => {
   return (
     <>
@@ -23,31 +24,16 @@ const CoreLayout = ({
     ${bannerKucuk || bannerImg || defaultBanner} 1200w,
     ${bannerImg || defaultBanner} 1920w
   `}
-          alt="Enwus makina mühendislik"
+          alt={bannerAlt??"Enwus makina mühendislik"}
           className="img-fluid banner-img"
           fetchpriority="high"
           decoding="async"
         />
-        <div className="banner-overlay "></div>
+        <div className="banner-overlay "></div> 
         <div className="banner-content text-white">
-          <h5 className="mt-5 mb-3">{bannerTitle ?? "Takip Ediniz"}</h5>
+          <h1 className="mt-5 mb-3 banner-h1">{bannerTitle ?? "İnovatif Mühendislik, Güvenilir Çözümler"}</h1>
           <div className="d-flex justify-content-center align-items-center">
-            {bannerText ? (
-              <h6 className="">{bannerText ?? "Takip Ediniz"}</h6>
-            ) : (
-              <>
-                {" "}
-                <a href="#" className="text-white me-3 fs-5">
-                  <i className="bi bi-facebook" />
-                </a>
-                <a href="#" className="text-white me-3 fs-5">
-                  <i className="bi bi-instagram" />
-                </a>
-                <a href="#" className="text-white me-3 fs-5">
-                  <i className="bi bi-linkedin" />
-                </a>
-              </>
-            )}
+            <h2 className="banner-h2">{bannerText ?? "Kaliteli üretim, zamanında teslimat"}</h2>
           </div>
         </div>
       </section>

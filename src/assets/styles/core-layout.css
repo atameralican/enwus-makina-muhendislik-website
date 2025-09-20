@@ -1,5 +1,5 @@
 /*CORE LAYOUT*/
-.page-card { 
+.page-card {
   background-color: rgba(255, 255, 255, 0.8);
   backdrop-filter: saturate(200%) blur(30px);
   box-shadow: 0 20px 27px 0 rgba(0, 0, 0, 0.05);
@@ -11,7 +11,7 @@
   margin-bottom: 32px;
 }
 
-/* BANNER */  
+/* BANNER */
 .banner {
   min-height: 75vh;
   width: 100%;
@@ -28,7 +28,7 @@
   z-index: -2;
 }
 
-.banner-overlay { 
+.banner-overlay {
   position: absolute;
   top: 0;
   left: 0;
@@ -38,7 +38,42 @@
   z-index: -1;
 }
 
-.banner-content { 
+.banner-content {
   position: relative;
   z-index: 1;
+}
+
+.banner-h1 {
+  font-size: 2.0rem !important;
+  font-weight: 600 !important;
+  color: #FAFAFA !important;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  background: #575757c5;
+  padding: 10px;
+  border-radius: 16px;
+  margin: 5px;
+  line-height: 1.2; /* Satır aralığı */
+  letter-spacing: -0.5px; /* Harf aralığı */
+}
+
+.banner-h2 {
+  font-size: 1.3rem !important;
+  font-weight: 400 !important;
+  color: #F8F8F8 !important;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.7);
+  background: #575757c5;
+  padding: 2px;
+  padding-left: 7px;
+  padding-right: 7px;
+  border-radius: 16px;
+  margin: 5px;
+}
+
+@media (max-width: 768px) {
+  .banner-h1 {
+    font-size: 1.3rem !important;
+  }
+  .banner-h2 {
+    font-size: 1rem !important;
+  }
 }

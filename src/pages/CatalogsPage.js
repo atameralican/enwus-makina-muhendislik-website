@@ -68,6 +68,7 @@ const Catalogs = () => {
           setShow(false);
           setSelectedPdf(null);
         }}
+        aria-label="Katalog Modal"
       >
         <Modal.Header closeButton>
           <Modal.Title>Katalog</Modal.Title>
