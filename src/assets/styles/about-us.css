@@ -23,7 +23,12 @@
   text-overflow: ellipsis;
   /* ... ekleme*/
 }
-
+.about-h2{
+  font-size: 1.25rem;
+}
+.about-h3{
+  font-size: 1rem;
+}
 /* BÜYÜK EKRAN CSS */
 @media (min-width: 991.98px) {
   .about-img {

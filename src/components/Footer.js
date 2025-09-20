@@ -1,14 +1,14 @@
 import { Link  } from "react-router-dom";
-
+import "../assets/styles/footer.css";
     const Footer=()=> {
   return (
     <footer className="py-3">
       <div className="container ">  
         <div className="row text-secondary">
           <div className="col-12 col-lg-6 text-center text-lg-start mb-3 mb-lg-0">
-            <h6>
+            <h3 className="footer-h3">
               <strong>ENWUS MAKİNA MÜHENDİSLİK</strong>
-            </h6>
+            </h3>
             <div className="mt-3">
               <nav aria-label="Ana Menü">
                 <ul className="d-flex fs-6   flex-wrap justify-content-center justify-content-lg-start list-unstyled mb-3 ps-0">
@@ -54,15 +54,15 @@ import { Link  } from "react-router-dom";
           </div>
 
           <div className="col-12 col-lg-6 ms-lg-auto text-center text-lg-end">
-            <h6 className="mb-5">
+            <h3 className="mb-5 footer-h3">
               <strong>Endüstriyel Üretimin Güvenilir Ortağı</strong>
-            </h6>
+            </h3>
 
             <a
               href="#dribbble"
               target="_blank"
               rel="noopener noreferrer"
-              className="text-secondary opacity-50 "
+              className="text-secondary "
             >
               <i className="bi bi-linkedin"></i> enwus-maki̇na-mühendi̇sli̇k
             </a>

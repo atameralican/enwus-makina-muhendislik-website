@@ -1,0 +1,10 @@
+.footer-h3{
+    font-size: 1.1rem;;
+}
+
+@media (max-width: 768px) {
+  .footer-h3 {
+    font-size: 1rem ;
+  }
+  
+}
