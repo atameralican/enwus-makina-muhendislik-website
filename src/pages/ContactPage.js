@@ -5,6 +5,11 @@ import profilePicture from "assets/images/logo-kucuk-beyaz.webp";
 import L from "leaflet";
 import markerIconPng from "leaflet/dist/images/marker-icon.png";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
+import { BsTelephone ,BsEnvelope } from "react-icons/bs";
+import { FaMapMarkerAlt } from "react-icons/fa";
+import { SiLinkedin } from "react-icons/si";
+
+
 const Contact = () => {
   return (
     <>
@@ -35,17 +40,17 @@ const Contact = () => {
                 <h3 className="mb-3">İletişim Bilgileri</h3>
 
                 <div className="d-flex align-items-center mb-2">
-                  <i className="fas fa-phone"></i>
+                  <BsTelephone  />
                   <span className="ms-2">(+90) 506 878 57 66</span>
                 </div>
 
                 <div className="d-flex align-items-center mb-2">
-                  <i className="fas fa-envelope"></i>
+                  <BsEnvelope />
                   <span className="ms-2">info@enwus.com</span>
                 </div>
 
                 <div className="d-flex align-items-center mb-2">
-                  <i className="fas fa-map-marker-alt"></i>
+                  <FaMapMarkerAlt />
                   <span className="ms-2">
                     Ostim OSB, 1271. Sk. No:12, 06374 Yenimahalle/Ankara
                   </span>
@@ -56,8 +61,7 @@ const Contact = () => {
                     href="https://www.linkedin.com/"
                     className="text-decoration-none text-reset d-inline-flex align-items-center"
                   >
-                    {" "}
-                    <i className="bi bi-linkedin"></i>
+                    <SiLinkedin className="" />
                     <span className="ms-2">/enwus-makina-muhendislik</span>
                   </a>
                 </div>

@@ -1,8 +1,23 @@
+
 body {
-  font-family: "Inter", sans-serif !important;
+  font-family: 'Montserrat', sans-serif !important;
 }
 
+@font-face {
+  font-family: 'Montserrat' !important;
+  src: url('./assets/fonts/Montserrat-Regular.woff2') format('woff2');
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
 
+@font-face {
+  font-family: 'Montserrat' !important;
+  src: url('./assets/fonts/Montserrat-Bold.woff2') format('woff2');
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
 
 
 

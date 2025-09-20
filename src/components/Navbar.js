@@ -1,7 +1,8 @@
 import React, { useState, useEffect, useRef } from "react";
 import { NavLink } from "react-router-dom";
 import "../assets/styles/navbar.css";
-
+import "bootstrap/dist/js/bootstrap.bundle.min.js";
+import { FaBars } from "react-icons/fa6";
 const Navbar = ({ routes }) => {
   const [isNavbarCollapsed, setIsNavbarCollapsed] = useState(false);
   const navbarRef = useRef(null);
@@ -52,7 +53,7 @@ const Navbar = ({ routes }) => {
             aria-label="Menüyü Aç/Kapat"
             onClick={() => setIsNavbarCollapsed(!isNavbarCollapsed)}
           >
-            <span className="bi bi-list"></span>
+            <FaBars />
           </button>
 
           {/* Navigation Menu */}
@@ -74,7 +75,7 @@ const Navbar = ({ routes }) => {
                       data-bs-toggle="dropdown"
                       aria-expanded="false"
                     >
-                      {route.icon && <i className={`bi ${route.icon}`}></i>}{" "}
+                      
                       {route.name}
                     </a>
                     <ul className="dropdown-menu">
@@ -85,9 +86,6 @@ const Navbar = ({ routes }) => {
                             className="dropdown-item"
                             onClick={handleNavLinkClick}
                           >
-                            {subRoute.icon && (
-                              <i className={`bi ${subRoute.icon}`}></i>
-                            )}{" "}
                             {subRoute.name}
                           </NavLink>
                         </li>
@@ -102,7 +100,6 @@ const Navbar = ({ routes }) => {
                       className="nav-link"
                       onClick={handleNavLinkClick}
                     >
-                      {route.icon && <i className={`bi ${route.icon}`}></i>}{" "}
                       {route.name}
                     </NavLink>
                   </li>
