@@ -1,5 +1,6 @@
 import React from "react";
 import "../assets/styles/img-card-components.css";
+import { MdKeyboardDoubleArrowRight } from "react-icons/md";
 
 const ImgCardComponent = ({
   title,
@@ -48,7 +49,8 @@ const ImgCardComponent = ({
               onClick={onClick}
             >
               {label}
-              <i className="ms-2 bi bi-arrow-right"></i>
+              <MdKeyboardDoubleArrowRight className="i ms-2 mt-1" />
+
             </button>
           </div>
         )}
@@ -61,7 +63,7 @@ const ImgCardComponent = ({
               className="btn text-light d-inline-flex "
             >
               {label ?? "Tıklayınız"}
-              <i className="ms-2 bi bi-arrow-right"></i>
+              <MdKeyboardDoubleArrowRight  className="i ms-2 mt-1" />
             </a>
           </div>
         )}

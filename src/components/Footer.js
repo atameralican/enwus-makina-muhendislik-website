@@ -1,5 +1,7 @@
 import { Link  } from "react-router-dom";
 import "../assets/styles/footer.css";
+import { SiLinkedin } from "react-icons/si";
+
     const Footer=()=> {
   return (
     <footer className="py-3">
@@ -64,7 +66,8 @@ import "../assets/styles/footer.css";
               rel="noopener noreferrer"
               className="text-secondary "
             >
-              <i className="bi bi-linkedin"></i> enwus-maki̇na-mühendi̇sli̇k
+              <SiLinkedin className="me-1" />
+ enwus-maki̇na-mühendi̇sli̇k
             </a>
           </div>
         </div>

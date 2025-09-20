@@ -47,11 +47,11 @@
   text-overflow: ellipsis; /* ... ekleme*/
 }
 /* Hover animasyonu */
-.img-card a:hover i {
+.img-card a:hover .i {
   transform: translateX(5px);
   transition: transform 0.3s ease;
 }
-.img-card button:hover i {
+.img-card button:hover .i {
   transform: translateX(5px);
   transition: transform 0.3s ease;
 }

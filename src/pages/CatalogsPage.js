@@ -1,6 +1,6 @@
 import React, { useState,  } from "react";
-import kataloglarPhoto from "assets/images/catalogs-page/kataloglar.avif";
-import kataloglarKucuk from "assets/images/catalogs-page/kataloglarkucuk.avif";
+import kataloglarPhoto from "assets/images/catalogs-page/kataloglar.webp";
+import kataloglarKucuk from "assets/images/catalogs-page/kataloglarkucuk.webp";
 import brosur from "assets/documents/kataloglar/EnwusBrosur.pdf";
 import brosurEng from "assets/documents/kataloglar/EnwusBrosurEnglish.pdf";
 import { Viewer, Worker } from "@react-pdf-viewer/core";
