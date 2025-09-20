@@ -16,6 +16,7 @@ const Contact = () => {
             alt="Enwus Makina"
             className="rounded-circle shadow-lg"
             style={{ width: "110px", height: "110px", objectFit: "cover" }}
+            loading="lazy"
           />
         </div>
 

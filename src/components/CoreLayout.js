@@ -1,6 +1,6 @@
 import routes from "routes";
 import Footer from "components/Footer";
-import defaultBanner from "assets/images/banners/banner.webp";
+import defaultBanner from "assets/images/home-page/banner-kucuk.webp";
 import Navbar from "./Navbar";
 import "../assets/styles/core-layout.css";
 const CoreLayout = ({
@@ -18,6 +18,7 @@ const CoreLayout = ({
       <section className="banner position-relative text-center d-flex align-items-center justify-content-center">
         <img
           src={bannerKucuk || bannerImg || defaultBanner}
+          sizes="100vw"
           srcSet={`
     ${bannerKucuk || bannerImg || defaultBanner} 1200w,
     ${bannerImg || defaultBanner} 1920w
