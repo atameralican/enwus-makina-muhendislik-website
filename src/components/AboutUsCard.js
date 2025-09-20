@@ -8,10 +8,10 @@ const AboutUsCard = ({ image, name, description }) => {
           <img src={image} alt={name} className="about-img" loading="lazy" />
         </div>
         <div className="col-lg-8 col-md-6 p-2 p-1 d-flex flex-column">
-          <h5 className="text-primary-emphasis">{name} </h5>
-          <h6 className="text-primary-emphasis fw-light lh-base about-card-description">
+          <h2 className="text-primary-emphasis about-h2">{name} </h2>
+          <h3 className="text-primary-emphasis fw-light lh-base about-card-description about-h3">
             {description}
-          </h6>
+          </h3>
         </div>
       </div>
     </>
