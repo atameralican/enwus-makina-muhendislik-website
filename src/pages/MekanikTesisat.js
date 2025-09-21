@@ -9,6 +9,7 @@ import post7 from "../assets/images/faaliyetler/mekanik/7.webp";
 import post8 from "../assets/images/faaliyetler/mekanik/8.webp";
 import post9 from "../assets/images/faaliyetler/mekanik/9.webp";
 import FaaliyetlerPageComponent from "../components/FaaliyetlerPageComponent";
+import SeoHelmet from "components/SeoHelmet";
 
 const MekanikTesisat = () => {
   const images = [
@@ -24,6 +25,14 @@ const MekanikTesisat = () => {
   ];
   return (
     <>
+      <SeoHelmet
+            title="Mekanik Tesisat - Enwus Makina Mühendislik"
+            description="Isıtma, soğutma, havalandırma ve sıhhi tesisat sistemleri. HVAC projelendirme, malzeme temini ve montaj hizmetleri. Ankara mekanik tesisat uzmanı."
+            keywords="mekanik tesisat sistemleri, HVAC projelendirme, ısıtma sistemi kurulumu, soğutma sistemi montajı, havalandırma sistemleri, sıhhi tesisat malzemeleri, doğalgaz tesisat kurulumu, yangın söndürme sistemi, mekanik tesisat projesi, klima sistemi kurulumu, Ankara tesisat firması, kombi kurulumu, tesisat malzeme tedariği, enerji verimli sistemler, boru tesisat, pompa grubu montajı, tesisat bakım servisi, anahtar teslim tesisat"
+            url="https://www.enwus.com/mekanik-tesisat"
+            image="https://www.enwus.com/static/media/6.555a70c3c3eb51ec413c.webp"
+            schemaData={mekanikTesisatSchema}
+          />
       <FaaliyetlerPageComponent
         title="Mekanik Tesisat"
         children={
@@ -72,3 +81,60 @@ const MekanikTesisat = () => {
 };
 
 export default MekanikTesisat;
+
+
+const mekanikTesisatSchema = {
+  "@context": "https://schema.org",
+  "@type": "ProfessionalService",
+  "serviceType": "Mekanik Tesisat Hizmetleri",
+  "name": "Mekanik Tesisat - Enwus Makina",
+  "description": "Isıtma, soğutma, havalandırma ve sıhhi tesisat sistemleri",
+  "url": "https://www.enwus.com/mekanik-tesisat",
+  "image": "https://www.enwus.com/static/media/6.555a70c3c3eb51ec413c.webp",
+  "provider": {
+    "@type": "Organization",
+    "name": "Enwus Makina Mühendislik"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "HVAC Sistemleri",
+      "description": "Isıtma, havalandırma ve klima sistemleri kurulumu"
+    },
+    {
+      "@type": "Offer",
+      "name": "Sıhhi Tesisat",
+      "description": "Su ve kanalizasyon tesisat sistemleri"
+    },
+    {
+      "@type": "Offer",
+      "name": "Doğalgaz Tesisatı",
+      "description": "Güvenli doğalgaz boru sistemleri kurulumu"
+    },
+    {
+      "@type": "Offer",
+      "name": "Yangın Söndürme Sistemleri",
+      "description": "Sprinkler ve yangın güvenlik sistemleri"
+    },
+    {
+      "@type": "Offer",
+      "name": "Mekanik Tesisat Projelendirme",
+      "description": "Mühendislik projeleri ve teknik danışmanlık"
+    }
+  ],
+  "hasCredential": [
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "Mekanik Tesisat Yeterlilik Belgesi"
+    }
+  ],
+  "areaServed": {
+    "@type": "GeoCircle",
+    "geoMidpoint": {
+      "@type": "GeoCoordinates",
+      "latitude": "39.9334",
+      "longitude": "32.8597"
+    },
+    "geoRadius": "50000"
+  }
+};
