@@ -8,11 +8,20 @@ import post6 from "assets/images/faaliyetler/hidrolik/6.webp";
 import post7 from "assets/images/faaliyetler/hidrolik/7.webp";
 import post8 from "assets/images/faaliyetler/hidrolik/8.webp";
 import FaaliyetlerPageComponent from "../components/FaaliyetlerPageComponent";
+import SeoHelmet from "components/SeoHelmet";
 
 const HidrolikPnomatik = () => {
   const images = [post1, post2, post3, post4, post5, post6, post7, post8];
   return (
     <>
+    <SeoHelmet
+        title="Hidrolik Pnomatik - Enwus Makina Mühendislik"
+        description="Ankara'da hidrolik ve pnömatik sistem tasarımı, kurulumu ve bakımı. CNC tezgah hidroliği, endüstriyel otomasyon, silindir üretimi ve teknik servis hizmetleri."
+        keywords="hidrolik sistem kurulumu, pnömatik sistem tasarımı, Ankara hidrolik servis, hidrolik silindir onarımı, pnömatik valf montajı, CNC hidrolik sistemleri, endüstriyel hidrolik çözümler, hidrolik güç ünitesi, pnömatik otomasyon, hidrolik pompası, pnömatik silindir, hidrolik bakım servisi, Ostim hidrolik, otomasyon sistemi kurulumu, hidrolik yedek parça, pnömatik devre tasarımı, hidrolik hortum değişimi, iş makinesi hidroliği"
+        url="https://www.enwus.com/hidrolik-pnomatik"
+        image="https://www.enwus.com/static/media/hidrolik.697ffb80218fd626604f.webp"
+        schemaData={hidroliklPnomatikSchema}
+      />
       <FaaliyetlerPageComponent
         title="Hidrolik Pnömatik"
         children={
@@ -64,3 +73,65 @@ const HidrolikPnomatik = () => {
 };
 
 export default HidrolikPnomatik;
+
+const hidroliklPnomatikSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Hidrolik ve Pnömatik Sistemler",
+  "name": "Hidrolik Pnömatik Sistemler - Enwus Makina",
+  "description": "Ankara'da hidrolik ve pnömatik sistem tasarımı, kurulumu ve bakımı",
+  "url": "https://www.enwus.com/hidrolik-pnomatik",
+  "image": "https://www.enwus.com/static/media/hidrolik.697ffb80218fd626604f.webp",
+  "provider": {
+    "@type": "Organization",
+    "name": "Enwus Makina Mühendislik",
+    "url": "https://www.enwus.com",
+    "logo": "https://www.enwus.com/static/media/logo-kucuk-beyaz.60bd22569041796544bb.webp",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Ostim OSB, 1271. Sk. No:12",
+      "addressLocality": "Ankara",
+      "addressRegion": "Ankara",
+      "postalCode": "06374",
+      "addressCountry": "TR"
+    },
+    "telephone": "+90-506-878-5766"
+  },
+  "areaServed": {
+    "@type": "GeoCircle",
+    "geoMidpoint": {
+      "@type": "GeoCoordinates",
+      "latitude": "39.9334",
+      "longitude": "32.8597"
+    },
+    "geoRadius": "100000"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "Hidrolik Sistem Tasarımı",
+      "description": "Endüstriyel ve mobil hidrolik sistem tasarımı ve kurulumu"
+    },
+    {
+      "@type": "Offer",
+      "name": "Pnömatik Sistem Çözümleri",
+      "description": "Pnömatik devre tasarımı, montajı ve otomasyon entegrasyonu"
+    },
+    {
+      "@type": "Offer",
+      "name": "Teknik Servis ve Bakım",
+      "description": "Hidrolik ve pnömatik sistemlerde arıza tespiti ve onarım"
+    },
+    {
+      "@type": "Offer",
+      "name": "Yedek Parça Temini",
+      "description": "Orijinal ve uyumlu yedek parça tedariği"
+    }
+  ],
+  "hasCredential": [
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "TSE Kalite Belgesi"
+    }
+  ]
+};

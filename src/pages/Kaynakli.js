@@ -5,11 +5,20 @@ import kaynak3 from "assets/images/faaliyetler/kaynak/kaynak-3.webp";
 import kaynak4 from "assets/images/faaliyetler/kaynak/kaynak-4.webp";
 import kaynak5 from "assets/images/faaliyetler/kaynak/kaynak-5.webp";
 import FaaliyetlerPageComponent from "../components/FaaliyetlerPageComponent";
+import SeoHelmet from "components/SeoHelmet";
 
 const Kaynakli = () => {
   const images = [kaynak1, kaynak2, kaynak3, kaynak4, kaynak5];
   return (
     <>
+      <SeoHelmet
+        title="Kaynakli İmalat - Enwus Makina Mühendislik"
+        description="Profesyonel MIG, TIG, gazaltı kaynak hizmetleri. Çelik konstrüksiyon, makine şaseleri, taşıyıcı sistemler ve özel proje kaynak imalatları. Ankara kaynak servisi."
+        keywords="MIG TIG kaynak hizmetleri, çelik konstrüksiyon kaynağı, gazaltı kaynak uygulaması, makine şasesi kaynağı, taşıyıcı sistem kaynağı, nokta kaynağı hizmetleri, kaynak konstrüksiyon, endüstriyel kaynak hizmetleri, Ankara kaynak servisi, özel pozisyon kaynağı, NDT kaynak kontrolü, kaynak kalite kontrol, paslanmaz kaynak, alüminyum kaynağı, basınçlı kap kaynağı, sertifikalı kaynakçı, kaynak mühendisliği, Ostim kaynak hizmetleri"
+        url="https://www.enwus.com/kaynakli-imalat"
+        image="https://www.enwus.com/static/media/kaynak.bd588001d9d079c31d79.webp"
+        schemaData={kaynakliImalatSchema}
+      />
       <FaaliyetlerPageComponent
         title="Kaynaklı İmalat"
         children={
@@ -56,3 +65,59 @@ const Kaynakli = () => {
 };
 
 export default Kaynakli;
+
+
+const kaynakliImalatSchema = {
+  "@context": "https://schema.org",
+  "@type": "Service",
+  "serviceType": "Kaynaklı İmalat Hizmetleri",
+  "name": "Kaynaklı İmalat - Enwus Makina",
+  "description": "Profesyonel MIG, TIG, gazaltı kaynak hizmetleri",
+  "url": "https://www.enwus.com/kaynakli-imalat",
+  "image": "https://www.enwus.com/static/media/kaynak.bd588001d9d079c31d79.webp",
+  "provider": {
+    "@type": "Organization",
+    "name": "Enwus Makina Mühendislik"
+  },
+  "offers": [
+    {
+      "@type": "Offer",
+      "name": "MIG Kaynak Hizmetleri",
+      "description": "Metal İnert Gaz kaynağı ile endüstriyel birleştirme"
+    },
+    {
+      "@type": "Offer",
+      "name": "TIG Kaynak Uygulamaları",
+      "description": "Tungsten İnert Gaz kaynağı ile hassas birleştirme"
+    },
+    {
+      "@type": "Offer",
+      "name": "Gazaltı Kaynak",
+      "description": "Çelik konstrüksiyon ve yapısal kaynak uygulamaları"
+    },
+    {
+      "@type": "Offer",
+      "name": "Çelik Konstrüksiyon",
+      "description": "Kaynaklı çelik yapı ve taşıyıcı sistem imalatı"
+    },
+    {
+      "@type": "Offer",
+      "name": "NDT Muayene",
+      "description": "Tahribatsız test ve kaynak kalite kontrolü"
+    }
+  ],
+  "hasCredential": [
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "Sertifikalı Kaynakçı Belgesi"
+    },
+    {
+      "@type": "EducationalOccupationalCredential",
+      "name": "NDT Seviye 2 Belgesi"
+    }
+  ],
+  "availableChannel": {
+    "@type": "ServiceChannel",
+    "availableLanguage": ["tr", "en"]
+  }
+};
