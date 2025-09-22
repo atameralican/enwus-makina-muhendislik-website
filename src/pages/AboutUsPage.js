@@ -161,6 +161,5 @@ const aboutUsSchema = {
       }
     ],
     "facilitySize": "5000 square meters",
-    "numberOfEmployees": "25-50"
   }
 };

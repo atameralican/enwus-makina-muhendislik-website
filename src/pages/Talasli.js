@@ -129,6 +129,5 @@ const talasliImalatSchema = {
       "name": "ISO 9001:2015 Belgesi"
     }
   ],
-  "numberOfEmployees": "10-50",
   "industry": "Metal İşleme"
 };
