@@ -11,7 +11,7 @@ const AboutUs = () => {
         image="https://enwus.com/static/media/hizmetlerBan.a185687c9d75711158bd.webp"
         schemaData={aboutUsSchema}
       />
-      <section className="py-5 about-us-section">
+      <section className="py-5 about-us-section ">
         <div className="container">
           <div className="hero-content col-md-8 text-justify text-primary-emphasis lh-base fw-light">
             <h2 className="mb-3 fw-bold text-md-start text-center text-primary-emphasis ">
@@ -29,7 +29,7 @@ const AboutUs = () => {
               kuruluşlardan biri haline geldik.
             </p>
             <p className="mb-4">
-              5000 m²'lik modern üretim tesisimizde, son teknoloji CNC
+              Modern üretim tesisimizde, son teknoloji CNC
               tezgahları, hassas ölçüm cihazları ve ileri düzey üretim
               ekipmanlarıyla hizmet veriyoruz. Deneyimli mühendis kadromuz ve
               kalifiye çalışanlarımızla, kompleks projeleri başarıyla hayata

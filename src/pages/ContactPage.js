@@ -5,16 +5,15 @@ import profilePicture from "assets/images/logo-kucuk-beyaz.webp";
 import L from "leaflet";
 import markerIconPng from "leaflet/dist/images/marker-icon.png";
 import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
-import { BsTelephone ,BsEnvelope } from "react-icons/bs";
+import { BsTelephone, BsEnvelope } from "react-icons/bs";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { SiLinkedin } from "react-icons/si";
 import SeoHelmet from "components/SeoHelmet";
 
-
 const Contact = () => {
   return (
     <>
-    <SeoHelmet
+      <SeoHelmet
         title="İletişim - Enwus Makina Mühendislik | Ankara Ostim"
         description="Enwus Makina Mühendislik iletişim bilgileri. Ostim OSB 1271. Sk. No:12 Ankara adresinde hizmetinizdeyiz. Tel: (0506) 878 57 66"
         keywords="Enwus iletişim, Ankara makina mühendislik telefon, Ostim makina firması adres, Enwus Makina telefon numarası, makina mühendislik iletişim Ankara, Ostim OSB adres, mühendislik firması telefon"
@@ -49,7 +48,7 @@ const Contact = () => {
                 <h3 className="mb-3">İletişim Bilgileri</h3>
 
                 <div className="d-flex align-items-center mb-2">
-                  <BsTelephone  />
+                  <BsTelephone />
                   <span className="ms-2">(+90) 506 878 57 66</span>
                 </div>
 
@@ -61,7 +60,12 @@ const Contact = () => {
                 <div className="d-flex align-items-center mb-2">
                   <FaMapMarkerAlt />
                   <span className="ms-2">
-                    Ostim OSB, 1271. Sk. No:12, 06374 Yenimahalle/Ankara
+                      <a
+                    href="https://www.google.com/maps?q=39.977726489204194,32.74991602015567"
+                    target="blank"
+                    className="text-decoration-none text-reset d-inline-flex align-items-center"
+                  >
+                    Ostim OSB, 1271. Sk. No:12, 06374 Yenimahalle/Ankara</a>
                   </span>
                 </div>
                 <div className="d-flex align-items-center mb-4 ">
@@ -72,7 +76,6 @@ const Contact = () => {
                   >
                     <SiLinkedin className="" />
                     <span className="ms-2">/enwus-makina-muhendislik</span>
-                    
                   </a>
                 </div>
               </div>
@@ -100,7 +103,15 @@ const Contact = () => {
                   shadowUrl: "leaflet/dist/images/marker-shadow.png",
                 })}
               >
-                <Popup>Enwus Makina Mühendislik</Popup>
+                <Popup>
+                  <a
+                    href="https://www.google.com/maps?q=39.977726489204194,32.74991602015567"
+                    target="blank"
+                    className="text-decoration-none text-reset d-inline-flex align-items-center"
+                  >
+                    Enwus Makina Mühendislik
+                  </a>
+                </Popup>
               </Marker>
             </MapContainer>
           </div>
@@ -115,44 +126,39 @@ export default Contact;
 const contactSchema = {
   "@context": "https://schema.org",
   "@type": "ContactPage",
-  "name": "İletişim - Enwus Makina Mühendislik",
-  "description": "Enwus Makina Mühendislik iletişim bilgileri, adres ve harita",
-  "url": "https://www.enwus.com/iletisim",
-  "mainEntity": {
+  name: "İletişim - Enwus Makina Mühendislik",
+  description: "Enwus Makina Mühendislik iletişim bilgileri, adres ve harita",
+  url: "https://www.enwus.com/iletisim",
+  mainEntity: {
     "@type": "Organization",
-    "name": "Enwus Makina Mühendislik",
-    "address": {
+    name: "Enwus Makina Mühendislik",
+    address: {
       "@type": "PostalAddress",
-      "streetAddress": "Ostim OSB, 1271. Sk. No:12",
-      "addressLocality": "Yenimahalle",
-      "addressRegion": "Ankara",
-      "postalCode": "06374",
-      "addressCountry": "TR"
+      streetAddress: "Ostim OSB, 1271. Sk. No:12",
+      addressLocality: "Yenimahalle",
+      addressRegion: "Ankara",
+      postalCode: "06374",
+      addressCountry: "TR",
     },
-    "geo": {
+    geo: {
       "@type": "GeoCoordinates",
-      "latitude": "39.977726489204194",
-      "longitude": "32.74991602015567"
+      latitude: "39.977726489204194",
+      longitude: "32.74991602015567",
     },
-    "contactPoint": [
+    contactPoint: [
       {
         "@type": "ContactPoint",
-        "telephone": "+90-506-878-5766",
-        "contactType": "customer service",
-        "availableLanguage": ["Turkish", "English"]
+        telephone: "+90-506-878-5766",
+        contactType: "customer service",
+        availableLanguage: ["Turkish", "English"],
       },
       {
         "@type": "ContactPoint",
-        "email": "info@enwus.com",
-        "contactType": "customer service"
-      }
+        email: "info@enwus.com",
+        contactType: "customer service",
+      },
     ],
-    "sameAs": [
-      "https://www.linkedin.com/company/enwus-makina"
-    ],
-    "openingHours": [
-      "Mo-Fr 08:00-18:00",
-      "Sa 08:00-16:00"
-    ]
-  }
+    sameAs: ["https://www.linkedin.com/company/enwus-makina"],
+    openingHours: ["Mo-Fr 08:00-18:00", "Sa 08:00-16:00"],
+  },
 };
