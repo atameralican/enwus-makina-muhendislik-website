@@ -67,11 +67,12 @@ const Contact = () => {
                 <div className="d-flex align-items-center mb-4 ">
                   <a
                     target="blank"
-                    href="https://www.linkedin.com/"
+                    href="https://www.linkedin.com/company/enwus-makina"
                     className="text-decoration-none text-reset d-inline-flex align-items-center"
                   >
                     <SiLinkedin className="" />
                     <span className="ms-2">/enwus-makina-muhendislik</span>
+                    
                   </a>
                 </div>
               </div>
@@ -147,7 +148,7 @@ const contactSchema = {
       }
     ],
     "sameAs": [
-      "https://www.linkedin.com/company/enwus-makina-muhendislik"
+      "https://www.linkedin.com/company/enwus-makina"
     ],
     "openingHours": [
       "Mo-Fr 08:00-18:00",

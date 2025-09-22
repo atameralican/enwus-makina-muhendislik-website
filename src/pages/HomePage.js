@@ -14,7 +14,7 @@ import SeoHelmet from "components/SeoHelmet";
 const HomePage = () => {
   return (
     <>
-    <SeoHelmet
+      <SeoHelmet
         title="Enwus Makina Mühendislik | Endüstriyel Üretimin Güvenilir Ortağı"
         description="Ankara merkezli makina mühendisliği firması. CNC talaşlı imalat, kaynak, hidrolik pnömatik, sac kesim, AR-GE hizmetleri. ISO 9001 sertifikalı kalite."
         keywords="Ankara makina mühendislik, CNC talaşlı imalat, kaynaklı imalat, hidrolik pnömatik sistemler, sac kesim büküm, AR-GE mühendislik, Ostim endüstriyel üretim, savunma sanayi parçaları, mekanik tesisat, endüstriyel otomasyon, hassas parça üretimi, kaliteli üretim Ankara"
@@ -72,7 +72,7 @@ const HomePage = () => {
                 <li className="mb-2">✓ Rekabetçi fiyat politikası</li>
               </ul>
             </div>
-          </div>
+          </div><hr></hr>
           <div className="row gy-3 gx-3 ">
             <div></div>
             <div className="col-lg-4 col-md-6">
@@ -81,23 +81,6 @@ const HomePage = () => {
                 description="AR-GE ve Mühendislik birimimiz, yenilikçi çözümler geliştirmek ve ürünlerimize değer katmak amacıyla sürekli araştırma ve tasarım faaliyetleri yürütmektedir."
                 image={arge}
                 link="/arge"
-              />
-            </div>
-
-            <div className="col-lg-4 col-md-6">
-              <ImgCardComponent
-                title="Mekanik Tesisat"
-                description="Boru ve ek parçaları flanş,dirsek,tee,redüksüyon,kep,3000Lb - 6000Lb dişli ve Sw fittingsler"
-                image={mekanik}
-                link="/mekanik-tesisat"
-              />
-            </div>
-            <div className="col-lg-4 col-md-6">
-              <ImgCardComponent
-                title="Sac Kesim ve Büküm Silindir"
-                description="Lazer/plazma kesim, abkant büküm hizmetleri ve silindir büküm hizmetleri"
-                image={sacKesim}
-                link="/sac-kesim-bukum"
               />
             </div>
             <div className="col-lg-4 col-md-6">
@@ -110,10 +93,26 @@ const HomePage = () => {
             </div>
             <div className="col-lg-4 col-md-6">
               <ImgCardComponent
+                title="Savunma Sanayi"
+                description="..."
+                image={talasli}
+                link="/savunma-sanayi"
+              />
+            </div>
+            <div className="col-lg-4 col-md-6">
+              <ImgCardComponent
                 title="Kaynaklı İmalat"
                 description="MIG, TIG ve gazaltı kaynak teknikleriyle güçlü birleştirme"
                 image={kaynakli}
                 link="/kaynakli-imalat"
+              />
+            </div>
+            <div className="col-lg-4 col-md-6">
+              <ImgCardComponent
+                title="Sac Kesim ve Büküm Silindir"
+                description="Lazer/plazma kesim, abkant büküm hizmetleri ve silindir büküm hizmetleri"
+                image={sacKesim}
+                link="/sac-kesim-bukum"
               />
             </div>
             <div className="col-lg-4 col-md-6">
@@ -124,10 +123,27 @@ const HomePage = () => {
                 link="/hidrolik-pnomatik"
               />
             </div>
+            <div className="col-lg-4 col-md-6">
+              <ImgCardComponent
+                title="Mekanik Tesisat"
+                description="Boru ve ek parçaları flanş,dirsek,tee,redüksüyon,kep,3000Lb - 6000Lb dişli ve Sw fittingsler"
+                image={mekanik}
+                link="/mekanik-tesisat"
+              />
+            </div>
 
             <div className="col-lg-4 col-md-6">
               <ImgCardComponent
-                title="Hırdavat"
+                title="Test Ekipmanları"
+                description="..."
+                image={hirdavat}
+                link="/test-ekipmanlari"
+              />
+            </div>
+
+            <div className="col-lg-4 col-md-6">
+              <ImgCardComponent
+                title="Toptan Hırdavat"
                 description="İnşaattan sanayiye, mobilyadan otomotive kadar pek çok sektöre yönelik hırdavat ve teknik malzeme tedariki sağlamaktayız"
                 image={hirdavat}
                 link="/hirdavat"
@@ -146,93 +162,92 @@ const homePageSchema = {
   "@context": "https://schema.org",
   "@type": "Organization",
   "@id": "https://www.enwus.com/#organization",
-  "name": "Enwus Makina Mühendislik",
-  "alternateName": "Enwus Makina",
-  "url": "https://www.enwus.com",
-  "logo": "https://www.enwus.com/static/media/logo-kucuk-beyaz.60bd22569041796544bb.webp",
-  "image": "https://enwus.com/static/media/banner.0835c9499db3c9a689dd.webp",
-  "description": "Ankara merkezli endüstriyel üretim ve makina mühendisliği çözümleri sunan güvenilir firma",
-  "legalName": "Enwus Makina Mühendislik Ltd. Şti.",
-  "address": {
+  name: "Enwus Makina Mühendislik",
+  alternateName: "Enwus Makina",
+  url: "https://www.enwus.com",
+  logo: "https://www.enwus.com/static/media/logo-kucuk-beyaz.60bd22569041796544bb.webp",
+  image: "https://enwus.com/static/media/banner.0835c9499db3c9a689dd.webp",
+  description:
+    "Ankara merkezli endüstriyel üretim ve makina mühendisliği çözümleri sunan güvenilir firma",
+  legalName: "Enwus Makina Mühendislik Ltd. Şti.",
+  address: {
     "@type": "PostalAddress",
-    "streetAddress": "Ostim OSB, 1271. Sk. No:12",
-    "addressLocality": "Ankara",
-    "addressRegion": "Ankara",
-    "postalCode": "06374",
-    "addressCountry": "TR"
+    streetAddress: "Ostim OSB, 1271. Sk. No:12",
+    addressLocality: "Ankara",
+    addressRegion: "Ankara",
+    postalCode: "06374",
+    addressCountry: "TR",
   },
-  "geo": {
+  geo: {
     "@type": "GeoCoordinates",
-    "latitude": "39.977726",
-    "longitude": "32.749916"
+    latitude: "39.977726",
+    longitude: "32.749916",
   },
-  "contactPoint": {
+  contactPoint: {
     "@type": "ContactPoint",
-    "telephone": "+90-506-878-5766",
-    "contactType": "customer service",
-    "email": "info@enwus.com",
-    "availableLanguage": ["Turkish", "English"],
-    "areaServed": "TR"
+    telephone: "+90-506-878-5766",
+    contactType: "customer service",
+    email: "info@enwus.com",
+    availableLanguage: ["Turkish", "English"],
+    areaServed: "TR",
   },
-  "hasOfferCatalog": {
+  hasOfferCatalog: {
     "@type": "OfferCatalog",
-    "name": "Endüstriyel Üretim Hizmetleri",
-    "itemListElement": [
+    name: "Endüstriyel Üretim Hizmetleri",
+    itemListElement: [
       {
         "@type": "OfferCatalog",
-        "name": "Talaşlı İmalat",
-        "description": "CNC torna ve freze ile hassas parça üretimi"
+        name: "Talaşlı İmalat",
+        description: "CNC torna ve freze ile hassas parça üretimi",
       },
       {
         "@type": "OfferCatalog",
-        "name": "Kaynaklı İmalat",
-        "description": "MIG, TIG ve gazaltı kaynak hizmetleri"
+        name: "Kaynaklı İmalat",
+        description: "MIG, TIG ve gazaltı kaynak hizmetleri",
       },
       {
         "@type": "OfferCatalog",
-        "name": "Hidrolik Pnömatik",
-        "description": "Endüstriyel otomasyon çözümleri"
+        name: "Hidrolik Pnömatik",
+        description: "Endüstriyel otomasyon çözümleri",
       },
       {
         "@type": "OfferCatalog",
-        "name": "Sac Kesim Büküm",
-        "description": "Lazer kesim ve abkant büküm"
+        name: "Sac Kesim Büküm",
+        description: "Lazer kesim ve abkant büküm",
       },
       {
         "@type": "OfferCatalog",
-        "name": "AR-GE Mühendislik",
-        "description": "Ürün geliştirme ve tasarım"
+        name: "AR-GE Mühendislik",
+        description: "Ürün geliştirme ve tasarım",
       },
       {
         "@type": "OfferCatalog",
-        "name": "Mekanik Tesisat",
-        "description": "HVAC ve tesisat sistemleri"
-      }
-    ]
+        name: "Mekanik Tesisat",
+        description: "HVAC ve tesisat sistemleri",
+      },
+    ],
   },
-  "areaServed": {
+  areaServed: {
     "@type": "Country",
-    "name": "Turkey"
+    name: "Turkey",
   },
-  "sameAs": [
-    "https://www.linkedin.com/company/enwus-makina-muhendislik"
-  ],
-  "hasCredential": [
+  sameAs: ["https://www.linkedin.com/company/enwus-makina"],
+  hasCredential: [
     {
       "@type": "EducationalOccupationalCredential",
-      "name": "ISO 9001:2015 Kalite Yönetim Sistemi"
+      name: "ISO 9001:2015 Kalite Yönetim Sistemi",
     },
     {
       "@type": "EducationalOccupationalCredential",
-      "name": "ISO 14001 Çevre Yönetim Sistemi"
-    }
+      name: "ISO 14001 Çevre Yönetim Sistemi",
+    },
   ],
-  "knowsAbout": [
+  knowsAbout: [
     "CNC Tezgah İşleme",
     "Kaynak Teknolojileri",
     "Hidrolik Sistemler",
     "Endüstriyel Otomasyon",
     "Makina Mühendisliği",
-    "Savunma Sanayi"
-  ]
+    "Savunma Sanayi",
+  ],
 };
