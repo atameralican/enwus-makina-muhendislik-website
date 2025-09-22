@@ -9,6 +9,7 @@ import mekanikTesisat from "assets/images/banners/mekanik_tesisat.webp";
 import sacKesim from "assets/images/banners/sackesim.webp";
 import hirdavat from "assets/images/banners/hirdavat-banner2.webp";
 import savunma from "assets/images/banners/savunma.webp";
+import savunmaKucuk from "assets/images/banners/savunma-kucuk.webp";
 
 import catalogBanner from "assets/images/catalogs-page/catalog-banner.webp";
 import catalogKucuk  from "assets/images/catalogs-page/catalog-banner-kucuk.webp";
@@ -62,6 +63,7 @@ const routes = [
         component: Savunma,
         key: "savunma-sanayi",
         bannerImg: savunma,
+        bannerKucuk: savunmaKucuk,
       },
       {
         name: "Kaynaklı İmalat",
