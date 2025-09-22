@@ -1,13 +1,14 @@
 import { lazy } from "react";
 
-import hizmetlerBanner from "assets/images/about-us/hizmetlerBan.webp";
-// import catalogBanner from "assets/images/kataloglar/machine_old.webp";
+import hakkimizda from "assets/images/about-us/hizmetlerBan.webp";
 import arge from "assets/images/banners/arge.webp";
 import talasli from "assets/images/banners/talasli8.webp";
 import hidrolik from "assets/images/banners/hidrolik.webp";
 import kaynakli from "assets/images/banners/kaynak.webp";
 import mekanikTesisat from "assets/images/banners/mekanik_tesisat.webp";
 import sacKesim from "assets/images/banners/sackesim.webp";
+import hirdavat from "assets/images/banners/hirdavat-banner2.webp";
+import savunma from "assets/images/banners/savunma.webp";
 
 import catalogBanner from "assets/images/catalogs-page/catalog-banner.webp";
 import catalogKucuk  from "assets/images/catalogs-page/catalog-banner-kucuk.webp";
@@ -32,7 +33,7 @@ const routes = [
     route: "/hakkimizda",
     component: AboutUs,
     key: "about-us",
-    bannerImg: hizmetlerBanner,
+    bannerImg: hakkimizda,
   },
   {
     name: "Faaliyet Alanlarımız",
@@ -60,6 +61,7 @@ const routes = [
         route: "/savunma-sanayi",
         component: Savunma,
         key: "savunma-sanayi",
+        bannerImg: savunma,
       },
       {
         name: "Kaynaklı İmalat",
@@ -106,6 +108,7 @@ const routes = [
         route: "/hirdavat",
         component: Hirdavat,
         key: "hirdavat",
+        bannerImg: hirdavat, 
       },
     ],
   },

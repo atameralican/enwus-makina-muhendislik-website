@@ -1,13 +1,14 @@
 import React from "react";
-import post4 from "assets/images/home-page/banner-kucuk.webp";
-import post3 from "assets/images/home-page/banner-kucuk.webp";
-import post2 from "assets/images/home-page/banner-kucuk.webp";
-import post1 from "assets/images/home-page/banner-kucuk.webp";
+import post5 from "assets/images/faaliyetler/savunma/savunma5.webp";
+import post4 from "assets/images/faaliyetler/savunma/savunma4.webp";
+import post3 from "assets/images/faaliyetler/savunma/savunma3.webp";
+import post2 from "assets/images/faaliyetler/savunma/savunma2.webp";
+import post1 from "assets/images/faaliyetler/savunma/savunma1.webp";
 import FaaliyetlerPageComponent from "../components/FaaliyetlerPageComponent";
 import SeoHelmet from "components/SeoHelmet";
 
 const Savunma = () => {
-  const images = [post1, post2, post3, post4];
+  const images = [post1, post2, post3, post4,post5];
   return (
     <>
       <SeoHelmet
@@ -20,7 +21,42 @@ const Savunma = () => {
       <FaaliyetlerPageComponent
         title="Savunma Sanayi"
         images={images}
-        children={<p>Savunma Sanayi Page</p>}
+        children={
+          <>
+            <p>
+              Savunma sanayisi; yüksek hassasiyet, mutlak güvenlik, dayanıklılık ve ileri teknoloji entegrasyonunu gerektiren bir alandır. Enwus Makina Mühendislik olarak, bu kritik sektörün beklentilerini karşılamak için tasarım, üretim ve montaj süreçlerimizde ölçülebilir kalite, doğruluk ve güvenilirlik ilkelerini benimsiyoruz.
+            </p>
+            <p className="fw-bold ">Hizmetlerimiz & Yeteneklerimiz</p>
+            <ul>
+              <li className="fw-bold">Yüksek Hassasiyetli Talaşlı İmalat</li>
+              <p>Kritik parçalarınız için CNC tezgâhları ile milimetrik doğrulukta üretim. Hassas yüzey kontrolü, tolerans uyumu ve parça tekrarında tutarlılık sağlıyoruz.</p>
+              <li className="fw-bold">Kaynaklı İmalat & Montaj</li>
+              <p>Kaynak süreçlerimiz (MIG, TIG, otomatik kaynak vb.), kaynak sonrası işlemler ve montaj hizmetleriyle bütünleşik çözümler sunuyoruz. Güçlü kaynak birleşimleri ve mekanik dayanıklılık ön plandadır.</p>
+              <li className="fw-bold">Sac Metal İşleme & Prototip Geliştirme</li>
+              <p>Sac kesim, büküm, delik açma gibi sac metal işlemleri; prototipleme ve küçük seri üretim ile yenilikçi ürün geliştirme destekleriyle size özel çözümler üretiyoruz.</p>
+              <li className="fw-bold">Antistatik Kauçuk Ürün </li>
+              <p>Özel tasarım ve mühimmat taşıma parçaları için yüzey direnci 10^6 – 10^11 ohm olarak üretim gerçekleştirilmektedir.</p>
+              <li className="fw-bold">Proje Yönetimi & Sürdürülebilir Üretim</li>
+              <p>Tasarım aşamasından test ve montaja kadar tüm adımlarda kalite güvence süreçleri, verimlilik analizleri ve çevresel sürdürülebilirlik kriterleri uygulanmaktadır.</p>
+              
+            </ul>
+           
+            <p className="fw-bold ">Avantajlarımız</p>
+            <ul>
+              <li>Türk savunma sanayisinin standartlarına uygunluk ve yerli/yabancı sertifikalar ile belgelendirilmiş üretim.</li>
+              <li>Modern makine parkı ve tecrübeli mühendis & teknisyen kadrosu ile yüksek kapasite.</li>
+              <li>Proje teslim süreleri ve maliyet optimizasyonunda hassas planlama.</li>
+              <li>Gizlilik, güvenlik ve projelerin hassasiyetine göre uygun koruma önlemleri.</li>
+              
+            </ul>
+            <p>
+              Enwus Makina Mühendislik, savunma sanayiindeki stratejik iş ortaklarına güvenli, yenilikçi ve yerli çözümler sunmaya hazırdır. Özel bir parça imalatından entegre sistem montajına kadar her projede yanınızdayız.
+            </p>
+            <p>
+              Bizimle iletişime geçin; taleplerinizi teknik uzmanlarımızla birlikte en ideal şekilde karşılayalım.
+            </p>
+          </>
+        }
       />
     </>
   );

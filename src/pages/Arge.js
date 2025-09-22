@@ -1,13 +1,14 @@
 import React from "react";
-import post4 from "assets/images/home-page/banner-kucuk.webp";
-import post3 from "assets/images/home-page/banner-kucuk.webp";
-import post2 from "assets/images/home-page/banner-kucuk.webp";
-import post1 from "assets/images/home-page/banner-kucuk.webp";
+import post5 from "assets/images/faaliyetler/arge/arge5.webp";
+import post4 from "assets/images/faaliyetler/arge/arge1.webp";
+import post3 from "assets/images/faaliyetler/arge/arge2.webp";
+import post2 from "assets/images/faaliyetler/arge/arge3.webp";
+import post1 from "assets/images/faaliyetler/arge/arge4.webp";
 import FaaliyetlerPageComponent from "../components/FaaliyetlerPageComponent";
 import SeoHelmet from "../components/SeoHelmet";
 
 const Arge = () => {
-  const images = [post1, post2, post3, post4];
+  const images = [post1, post2, post3, post4,post5];
 
   return (
     <>

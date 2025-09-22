@@ -5,6 +5,7 @@ import arge from "../assets/images/home-page/arge.webp";
 import mekanik from "../assets/images/home-page/mekanik-kucuk.webp";
 import sacKesim from "../assets/images/home-page/sackesim.webp";
 import talasli from "../assets/images/home-page/talasli.webp";
+import savunma from "../assets/images/faaliyetler/savunma/savunma1.webp";
 import kaynakli from "../assets/images/home-page/kaynakli.webp";
 import hidrolik from "../assets/images/home-page/hidrolik.webp";
 import hirdavat from "../assets/images/home-page/hirdavat.webp";
@@ -94,8 +95,8 @@ const HomePage = () => {
             <div className="col-lg-4 col-md-6">
               <ImgCardComponent
                 title="Savunma Sanayi"
-                description="..."
-                image={talasli}
+                description="Savunma sanayisinde tasarım, üretim ve montaj süreçlerimizde ölçülebilir kalite, doğruluk ve güvenilirlik ilkelerini benimsiyoruz."
+                image={savunma}
                 link="/savunma-sanayi"
               />
             </div>
