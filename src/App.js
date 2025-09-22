@@ -52,7 +52,7 @@ export default function App() {
             key={route.key}
             element={
               <Suspense fallback={<Loading />}>
-                <CoreLayout bannerImg={route?.bannerImg} bannerKucuk={route?.bannerKucuk} >
+                <CoreLayout bannerImg={route?.bannerImg} bannerText={route?.bannerText} bannerTitle={route?.bannerTitle} bannerKucuk={route?.bannerKucuk} >
                   <ComponentToRender />
                 </CoreLayout>
               </Suspense>
