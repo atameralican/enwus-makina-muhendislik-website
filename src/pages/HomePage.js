@@ -152,7 +152,6 @@ const homePageSchema = {
   "logo": "https://www.enwus.com/static/media/logo-kucuk-beyaz.60bd22569041796544bb.webp",
   "image": "https://enwus.com/static/media/banner.0835c9499db3c9a689dd.webp",
   "description": "Ankara merkezli endüstriyel üretim ve makina mühendisliği çözümleri sunan güvenilir firma",
-  "numberOfEmployees": "25-50",
   "legalName": "Enwus Makina Mühendislik Ltd. Şti.",
   "address": {
     "@type": "PostalAddress",
