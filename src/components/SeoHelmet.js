@@ -2,7 +2,6 @@ import { Helmet } from "react-helmet";
 
 const SeoHelmet = ({ title, description, keywords, url, image, schemaData }) => {
   const defaultKeywords = "Enwus, makina mühendislik, talaşlı imalat, kaynaklı imalat, CNC, AR-GE, savunma sanayi, hidrolik pnömatik, mekanik tesisat, sac kesim, montaj hizmetleri";
-  const canonicalUrl = url ?? "https://www.enwus.com";
   const defaultImage = image ?? "https://www.enwus.com/static/media/logo-kucuk-beyaz.60bd22569041796544bb.webp";
 
   // Default Organization Schema (mevcut sisteminiz)
@@ -11,7 +10,7 @@ const SeoHelmet = ({ title, description, keywords, url, image, schemaData }) => 
     "@type": "Organization",
     "@id": "https://www.enwus.com/#organization",
     name: title ?? "Enwus Makina Mühendislik",
-    url: canonicalUrl,
+    url: url,
     logo: "https://www.enwus.com/static/media/logo-kucuk-beyaz.60bd22569041796544bb.webp",
     description: description,
     address: {
@@ -42,14 +41,14 @@ const SeoHelmet = ({ title, description, keywords, url, image, schemaData }) => 
       <meta name="description" content={description} />
       <meta name="keywords" content={keywords ?? defaultKeywords} />
       <meta name="robots" content="index, follow" />
-      <link rel="canonical" href={canonicalUrl} />
+      <link rel="canonical" href={url} />
       <meta charSet="utf-8" />
       
       {/* Open Graph */}
       <meta property="og:type" content="website" />
       <meta property="og:title" content={title} />
       <meta property="og:description" content={description} />
-      <meta property="og:url" content={canonicalUrl} />
+      <meta property="og:url" content={url} />
       <meta property="og:image" content={defaultImage} />
       <meta property="og:site_name" content="Enwus Makina Mühendislik" />
       
