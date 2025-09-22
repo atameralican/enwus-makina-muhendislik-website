@@ -25,7 +25,7 @@ const SeoHelmet = ({ title, description, keywords, url, image, schemaData }) => 
       contactType: "customer service",
       availableLanguage: ["Turkish", "English"]
     },
-    sameAs: ["https://www.linkedin.com/company/enwus-makina-muhendislik"]
+    sameAs: ["https://www.linkedin.com/company/enwus-makina"]
   };
 
   // Eğer özel schema yoksa default kullan, varsa özel schema kullan

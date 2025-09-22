@@ -60,15 +60,17 @@ import { SiLinkedin } from "react-icons/si";
               <strong>Endüstriyel Üretimin Güvenilir Ortağı</strong>
             </h3>
 
-            <a
-              href="#dribbble"
-              target="_blank"
-              rel="noopener noreferrer"
-              className="text-secondary "
-            >
-              <SiLinkedin className="me-1" />
- enwus-maki̇na-mühendi̇sli̇k
-            </a>
+           <a
+  href="https://www.linkedin.com/company/enwus-makina"
+  target="_blank"
+  rel="noopener noreferrer"
+  class="text-secondary"
+  title="Enwus Makina Mühendislik LinkedIn Sayfası"
+  aria-label="Enwus Makina Mühendislik LinkedIn Sayfası"
+>
+  <SiLinkedin className="me-1" />
+  Enwus Makina Mühendislik
+</a>
           </div>
         </div>
       </div>

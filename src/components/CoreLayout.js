@@ -1,5 +1,6 @@
 import routes from "routes";
 import Footer from "components/Footer";
+import profilePicture from "assets/images/logo-kucuk-beyaz.webp";
 import defaultBanner from "assets/images/home-page/banner-kucuk.webp";
 import Navbar from "./Navbar";
 import "../assets/styles/core-layout.css";
@@ -32,9 +33,15 @@ const CoreLayout = ({
         <div className="banner-overlay "></div> 
         <div className="banner-content text-white">
           <h1 className="mt-5 mb-3 banner-h1">{bannerTitle ?? "İnovatif Mühendislik, Güvenilir Çözümler"}</h1>
-          <div className="d-flex justify-content-center align-items-center">
-            <h2 className="banner-h2">{bannerText ?? "Kaliteli üretim, zamanında teslimat"}</h2>
-          </div>
+         {bannerText?<div className="d-flex justify-content-center align-items-center">
+            <h2 className="banner-h2">{bannerText}</h2>
+          </div>:<img
+            src={profilePicture}
+            alt="Enwus Makina"
+            className="rounded-circle shadow-lg"
+            style={{ width: "110px", height: "110px", objectFit: "cover" }}
+            loading="lazy"
+          />} 
         </div>
       </section>
 

@@ -44,9 +44,11 @@ const routes = [
         component: Arge,
         key: "arge",
         bannerImg: arge,
+        bannerTitle:"Ar-ge ve Mühendislik Hizmetleri",
       },
       {
         name: "Talaşlı İmalat",
+        bannerTitle: "Talaşlı İmalat",
         route: "/talasli-imalat",
         component: Talasli,
         key: "talasli-imalat",
@@ -54,12 +56,14 @@ const routes = [
       },
       {
         name: "Savunma Sanayi",
+        bannerTitle: "Savunma Sanayi",
         route: "/savunma-sanayi",
         component: Savunma,
         key: "savunma-sanayi",
       },
       {
         name: "Kaynaklı İmalat",
+        bannerTitle: "Kaynaklı İmalat",
         route: "/kaynakli-imalat",
         component: Kaynakli,
         key: "kaynakli-imalat",
@@ -67,6 +71,7 @@ const routes = [
       },
       {
         name: "Sac Kesim Büküm Silindir",
+        bannerTitle: "Sac Kesim Büküm Silindir",
         route: "/sac-kesim-bukum",
         component: SacKesimBukum,
         key: "sac-kesim-bukum",
@@ -74,6 +79,7 @@ const routes = [
       },
       {
         name: "Hidrolik Pnömatik",
+        bannerTitle: "Hidrolik Pnömatik",
         route: "/hidrolik-pnomatik",
         component: HidrolikPnomatik,
         key: "hidrolik-pnomatik",
@@ -81,19 +87,22 @@ const routes = [
       },
       {
         name: "Mekanik Tesisat Ürünleri",
+        bannerTitle: "Mekanik Tesisat Ürünleri",
         route: "/mekanik-tesisat",
         component: MekanikTesisat,
         key: "mekanik-tesisat",
-        bannerImg: mekanikTesisat,
+        bannerImg: mekanikTesisat, 
       },
       {
         name: "Test Ekipmanları",
+        bannerTitle: "Test Ekipmanları",
         route: "/test-ekipmanlari",
         component: TestEkipmanlari,
         key: "test-ekipmanlari",
       },
       {
         name: "Toptan Hırdavat",
+        bannerTitle: "Toptan Hırdavat",
         route: "/hirdavat",
         component: Hirdavat,
         key: "hirdavat",
@@ -115,6 +124,7 @@ const routes = [
     key: "iletisim",
     bannerImg: contactBanner,
     bannerKucuk: contactKucuk,
+    bannerText:"Her Zaman Yanınızdayız, Güvenle İletişime Geçin"
   },
 ];
 
