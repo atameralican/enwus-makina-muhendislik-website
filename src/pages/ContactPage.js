@@ -8,11 +8,20 @@ import { MapContainer, TileLayer, Marker, Popup } from "react-leaflet";
 import { BsTelephone ,BsEnvelope } from "react-icons/bs";
 import { FaMapMarkerAlt } from "react-icons/fa";
 import { SiLinkedin } from "react-icons/si";
+import SeoHelmet from "components/SeoHelmet";
 
 
 const Contact = () => {
   return (
     <>
+    <SeoHelmet
+        title="İletişim - Enwus Makina Mühendislik | Ankara Ostim"
+        description="Enwus Makina Mühendislik iletişim bilgileri. Ostim OSB 1271. Sk. No:12 Ankara adresinde hizmetinizdeyiz. Tel: (0506) 878 57 66"
+        keywords="Enwus iletişim, Ankara makina mühendislik telefon, Ostim makina firması adres, Enwus Makina telefon numarası, makina mühendislik iletişim Ankara, Ostim OSB adres, mühendislik firması telefon"
+        url="https://www.enwus.com/iletisim"
+        image="https://enwus.com/static/media/iletisimBanner.5bde6b9c63d5a32fa08d.webp"
+        schemaData={contactSchema}
+      />
       <section className="py-5 contact-section">
         {/* Circle Avatar Logo*/}
         <div className="banner-logo-circle">
@@ -101,3 +110,48 @@ const Contact = () => {
 };
 
 export default Contact;
+
+const contactSchema = {
+  "@context": "https://schema.org",
+  "@type": "ContactPage",
+  "name": "İletişim - Enwus Makina Mühendislik",
+  "description": "Enwus Makina Mühendislik iletişim bilgileri, adres ve harita",
+  "url": "https://www.enwus.com/iletisim",
+  "mainEntity": {
+    "@type": "Organization",
+    "name": "Enwus Makina Mühendislik",
+    "address": {
+      "@type": "PostalAddress",
+      "streetAddress": "Ostim OSB, 1271. Sk. No:12",
+      "addressLocality": "Yenimahalle",
+      "addressRegion": "Ankara",
+      "postalCode": "06374",
+      "addressCountry": "TR"
+    },
+    "geo": {
+      "@type": "GeoCoordinates",
+      "latitude": "39.977726489204194",
+      "longitude": "32.74991602015567"
+    },
+    "contactPoint": [
+      {
+        "@type": "ContactPoint",
+        "telephone": "+90-506-878-5766",
+        "contactType": "customer service",
+        "availableLanguage": ["Turkish", "English"]
+      },
+      {
+        "@type": "ContactPoint",
+        "email": "info@enwus.com",
+        "contactType": "customer service"
+      }
+    ],
+    "sameAs": [
+      "https://www.linkedin.com/company/enwus-makina-muhendislik"
+    ],
+    "openingHours": [
+      "Mo-Fr 08:00-18:00",
+      "Sa 08:00-16:00"
+    ]
+  }
+};
