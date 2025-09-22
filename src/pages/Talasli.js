@@ -130,6 +130,5 @@ const talasliImalatSchema = {
     }
   ],
   "numberOfEmployees": "10-50",
-  "foundingDate": "2008",
   "industry": "Metal İşleme"
 };
